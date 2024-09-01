@@ -1,0 +1,97 @@
+.gotoStoreCont {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.gotoStoreCont .gotoStoreSub {
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.marqueeCont {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.marquee {
+    width: 100%;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.marquee span {
+    display: inline-block;
+    animation: 30s slide infinite linear;
+}
+
+.marquee.marqueeLink {
+    background: var(--secondary-color);
+    position: relative;
+}
+
+.marquee.marqueeLink span {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-family: var(--couture-font);
+    font-size: 6vw;
+}
+
+.marquee.marqueeWords {
+    background: var(--primary-color);
+    padding: 10px;
+
+}
+
+.marquee.marqueeWords span {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+    font-size: 20px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@media (max-width:1200px) {
+
+    .gotoStoreCont .gotoStoreSub{
+        font-size: 5vw;
+    }
+
+    .marqueeCont{
+        margin-top: 20px;
+    }
+
+    .marquee span{
+        animation: 10s slide infinite linear;
+    }
+
+    .marquee .words{
+        animation: 30s slide infinite linear;
+    }
+
+    .marquee.marqueeLink span{
+        font-size: 20vw;
+    }
+    .marquee.marqueeLink .marqueeLinkHover {
+        display: none;
+    }
+}

@@ -1,0 +1,94 @@
+.revealCont{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.revealAnimationCont{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary-color);
+    z-index: 1000;
+    transition: all .5s;
+}
+
+.revealImgCont{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.revealBlack{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index:8;
+}
+
+.revealImg{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.revealClip{
+    transition: all .5s;
+}
+
+.revealImg:nth-child(1){
+    z-index: 7;
+}
+
+.revealImg:nth-child(2){
+    z-index: 6;
+}
+
+.revealImg:nth-child(3){
+    z-index: 5;
+}
+
+.revealImg:nth-child(4){
+    z-index: 4;
+}
+
+.revealImg:nth-child(5){
+    z-index: 3;
+}
+
+.revealImg:nth-child(6){
+    z-index: 2;
+}
+
+.revealImg:nth-child(7){
+    z-index: 1;
+}
+
+.heroTitle {
+    z-index: 1200;
+    position: absolute;
+    font-size: 80px;
+    color: var(--secondary-color);
+    width: fit-content;
+    mix-blend-mode: difference;
+}
+
+@media (max-width: 1200px){
+    .heroTitle{
+        font-size: 12vw;
+    }
+}

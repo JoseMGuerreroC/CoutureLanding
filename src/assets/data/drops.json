@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "name": "First Drop Collection",
+        "description": "Primera coleccion de Couture",
+        "release": "24/07/2024",
+        "img": "/src/assets/img/Drops/drop-1.webp",
+        "backimgPreview" : "/src/assets/img/Drops/backdropPreview-1.webp",
+        "storeLink" : "https://www.facebook.com/"
+
+    },
+    {
+        "id": 2,
+        "name": "Second Drop Collection",
+        "description": "Segunda coleccion de Couture",
+        "release": "30/07/2024",
+        "img": "/src/assets/img/Drops/drop-2.webp",
+        "backimgPreview" : "/src/assets/img/Drops/backdropPreview-2.webp",
+        "storeLink" : "https://www.instagram.com/"
+    },
+    {
+        "id": 3,
+        "name": "Third Drop Collection",
+        "description": "Segunda coleccion de Couture",
+        "release": "1/10/2024",
+        "img": "/src/assets/img/Drops/drop-3.webp",
+        "backimgPreview" : "/src/assets/img/Drops/backdropPreview-3.webp",
+        "storeLink" : "https://www.tiktok.com/"
+    },
+    {
+        "id": 4,
+        "name": "Fourth Drop Collection",
+        "description": "Segunda coleccion de Couture",
+        "release": "19/03/2025",
+        "img": "/src/assets/img/Drops/drop-4.webp",
+        "backimgPreview" : "/src/assets/img/Drops/backdropPreview-4.webp",
+        "storeLink" : "https://www.behance.com/"
+    }
+]

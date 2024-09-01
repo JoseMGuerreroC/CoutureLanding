@@ -1,0 +1,29 @@
+.privacyCont{
+    padding: 5vw;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+.privacyTitle{
+    color: var(--secondary-color);
+    font-size: 40px;
+    font-family: var(--couture-font);
+    width: 100%;
+}
+
+.privacySubtitle{
+    color: var(--secondary-color);
+    font-size: 15px;
+    font-family: var(--couture-font);
+}
+
+.privacyText{
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-family: var(--primary-font);
+}
+
+.privacyText a{
+    color: var(--secondary-color);
+
+}

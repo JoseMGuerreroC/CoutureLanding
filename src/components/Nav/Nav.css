@@ -1,0 +1,194 @@
+.navbar{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    background: var(--primary-color);
+    z-index: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarBrand{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+.brandText{
+    font-size: 20px;
+    color: var(--secondary-color);
+    letter-spacing: 5px;
+    position: absolute;
+}
+
+.navbarLinks{
+    padding: 5px;
+    display: flex;
+}
+
+.navlink{
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlink span{
+    transition: opacity .5s;
+}
+
+.navlink:hover span{
+    opacity: 0;
+}
+
+.lottieFire{
+    filter: invert(0%) !important;
+}
+
+.lottieNav{
+    position: absolute;
+    opacity: 0;
+    transition: all .5s;
+    transform: scale(0);
+    filter: invert(100%);
+}
+
+
+
+.lottieNav:nth-child(1){
+    filter: invert(0%);
+}
+
+.navlink:hover .lottieNav{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.linkStore{
+    font-size: 20px;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.linkStore i{
+    padding: 0 10px;
+    font-size: 15px;
+    color: var(--secondary-color);
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all .5s;
+
+}
+
+.linkStore:hover i{
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.navbarBtn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:1200px) {
+
+    .lottieNav{
+        display: none;
+    }
+
+    .navbar{
+        z-index: 2000;
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        backdrop-filter: blur(10px);
+        display: none;
+        flex-direction: column;
+        padding-top: 80px;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .navbarBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbarBrand{
+        height: 40px;
+    }
+
+    .brandText{
+        font-size: 30px;
+    }
+
+    .navbarLinks{
+        flex-direction: column;
+        overflow-y: scroll;
+        height: 80%;
+        justify-content: center;
+    }
+
+    .navlink{
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    .navlink:hover span{
+        opacity: 1;
+    }
+
+    .navlink:hover .lottieNav{
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    .navbarStore{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linkStore{
+        padding: 0;
+        margin: 10px;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    .linkStore i{
+        display: none;
+    }
+
+}
+
+@media (max-height: 700px){
+    .navbarLinks{
+        justify-content: flex-start;
+    }
+}
+
+
+

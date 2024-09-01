@@ -1,0 +1,55 @@
+.gotoDropsCont{
+    height: 200svh;
+    width: 100%;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.gotoDropsTextCont{
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    height: max-content;
+}
+
+.gotoDropsText{
+    width: 100%;
+    margin: 20px;
+    padding: 0 20px;
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+.gotoDropsText.two, .gotoDropsText.three{
+    padding: 0;
+    margin: 0;
+}
+
+.gotoDropsButton{
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    background: var(--primary-color);
+    margin: 20px 0;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.buttonLine{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: var(--secondary-color);
+    z-index: 1;
+}

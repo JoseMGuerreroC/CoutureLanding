@@ -1,0 +1,22 @@
+.workingCont{
+    display: flex;
+    width: 100%;
+    height: 100svh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.workingLink{
+    color: #fff;
+}
+
+.workingText{
+    color: #fff;
+    font-size: 15px;
+    font-family: var(--primary-font);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}

@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "title": "Icónico",
+        "img": "/src/assets/img/Gallery/img-1.webp"
+    },
+    {
+        "id": 2,
+        "title": "Auténtico",
+        "img": "/src/assets/img/Gallery/img-2.webp"
+    },
+    {
+        "id": 3,
+        "title": "Sofisticado",
+        "img": "/src/assets/img/Gallery/img-3.webp"
+    },
+    {
+        "id": 4,
+        "title": "Etéreo",
+        "img": "/src/assets/img/Gallery/img-4.webp"
+    },
+    {
+        "id": 5,
+        "title": "Elegante",
+        "img": "/src/assets/img/Gallery/img-5.webp"
+    },
+    {
+        "id": 6,
+        "title": "Distintivo",
+        "img": "/src/assets/img/Gallery/img-6.webp"
+    },
+    {
+        "id": 7,
+        "title": "Refinado",
+        "img": "/src/assets/img/Gallery/img-7.webp"
+    },
+    {
+        "id": 8,
+        "title": "Exclusivo",
+        "img": "/src/assets/img/Gallery/img-8.webp"
+    },
+    {
+        "id": 9,
+        "title": "Clásico",
+        "img": "/src/assets/img/Gallery/img-9.webp"
+    },
+    {
+        "id": 10,
+        "title": "Atemporal",
+        "img": "/src/assets/img/Gallery/img-10.webp"
+    },
+    {
+        "id": 11,
+        "title": "Original",
+        "img": "/src/assets/img/Gallery/img-11.webp"
+    },
+    {
+        "id": 12,
+        "title": "Trascendental",
+        "img": "/src/assets/img/Gallery/img-12.webp"
+    },
+    {
+        "id": 13,
+        "title": "Evocador",
+        "img": "/src/assets/img/Gallery/img-13.webp"
+    },
+    {
+        "id": 14,
+        "title": "Inolvidable",
+        "img": "/src/assets/img/Gallery/img-14.webp"
+    },
+    {
+        "id": 15,
+        "title": "Sutil",
+        "img": "/src/assets/img/Gallery/img-15.webp"
+    },
+    {
+        "id": 16,
+        "title": "Singular",
+        "img": "/src/assets/img/Gallery/img-16.webp"
+    },
+    {
+        "id": 17,
+        "title": "Místico",
+        "img": "/src/assets/img/Gallery/img-17.webp"
+    },
+    {
+        "id": 18,
+        "title": "Delicado",
+        "img": "/src/assets/img/Gallery/img-18.webp"
+    },
+    {
+        "id": 19,
+        "title": "Sublime",
+        "img": "/src/assets/img/Gallery/img-19.webp"
+    },
+    {
+        "id": 20,
+        "title": "Exquisito",
+        "img": "/src/assets/img/Gallery/img-20.webp"
+    }
+]
