@@ -121,13 +121,13 @@ function RevealPage() {
                 <div className='revealAnimationCont'>
                     <section className='revealImgCont'>
                         <div className="revealClip revealBlack"></div>
-                        <img className='revealClip revealImg' src="/src/assets/img/Reveal/revImg-1.webp" alt="" />
-                        <img className='revealClip revealImg' src="/src/assets/img/Reveal/revImg-2.webp" alt="" />
-                        <img className='revealClip revealImg' src="/src/assets/img/Reveal/revImg-3.webp" alt="" />
-                        <img className='revealClip revealImg' src="/src/assets/img/Reveal/revImg-4.webp" alt="" />
-                        <img className='revealClip revealImg' src="/src/assets/img/Reveal/revImg-5.webp" alt="" />
-                        <img className='revealClip revealImg' src="/src/assets/img/Reveal/revImg-6.webp" alt="" />
-                        <img className='revealClip revealImg' src="/src/assets/img/Reveal/revImg-7.webp" alt="" />
+                        <img className='revealClip revealImg' src="/img/Reveal/revImg-1.webp" alt="" />
+                        <img className='revealClip revealImg' src="/img/Reveal/revImg-2.webp" alt="" />
+                        <img className='revealClip revealImg' src="/img/Reveal/revImg-3.webp" alt="" />
+                        <img className='revealClip revealImg' src="/img/Reveal/revImg-4.webp" alt="" />
+                        <img className='revealClip revealImg' src="/img/Reveal/revImg-5.webp" alt="" />
+                        <img className='revealClip revealImg' src="/img/Reveal/revImg-6.webp" alt="" />
+                        <img className='revealClip revealImg' src="/img/Reveal/revImg-7.webp" alt="" />
                     </section>
                 </div>
             </div>

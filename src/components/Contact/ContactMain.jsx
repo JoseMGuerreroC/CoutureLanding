@@ -288,7 +288,7 @@ function ContactMain() {
                 </div>
             </div>
             <div className="contactMain">
-                <video src="/src/assets/img/Contact/contactVid.mp4" autoPlay loop muted></video>
+                <video src="/img/Contact/contactVid.mp4" autoPlay loop muted></video>
                 <div className="contactMarqueeCont">
                     <div className="marquee marqueeContact">
                         <span>&nbsp;Mándanos un mensaje -</span>

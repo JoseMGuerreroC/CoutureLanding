@@ -129,10 +129,10 @@ function Hero() {
             </div>
             <div className="section-previews">
                 <div className="img" id='preview-1'>
-                    <img src="/src/assets/img/hero/img-1.webp" alt="" />
+                    <img src="/img/hero/img-1.webp" alt="" />
                 </div>
                 <div className="img" id='preview-2'>
-                    <img src="/src/assets/img/hero/img-2.webp" alt="" />
+                    <img src="/img/hero/img-2.webp" alt="" />
                 </div>
             </div>
 
