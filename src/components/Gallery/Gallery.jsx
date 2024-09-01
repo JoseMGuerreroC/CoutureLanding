@@ -5,7 +5,7 @@ function Gallery() {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch("/src/assets/data/gallery.json")
+        fetch("/data/gallery.json")
             .then(response => response.json())
             .then(data => setImages(data))
             .catch(error => console.log(error));

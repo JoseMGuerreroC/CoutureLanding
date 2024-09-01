@@ -19,7 +19,7 @@ function DropChooser() {
 
     useEffect(() => {
 
-        fetch('/src/assets/data/drops.json')
+        fetch('/data/drops.json')
     
             .then(response => response.json())
             .then(data => {

@@ -6,7 +6,7 @@
         "release": "24/07/2024",
         "img": "/img/Drops/drop-1.webp",
         "backimgPreview" : "/img/Drops/backdropPreview-1.webp",
-        "storeLink" : "https://www.facebook.com/"
+        "storeLink" : "https://couturemx.netlify.app/store"
 
     },
     {
@@ -16,7 +16,7 @@
         "release": "30/07/2024",
         "img": "/img/Drops/drop-2.webp",
         "backimgPreview" : "/img/Drops/backdropPreview-2.webp",
-        "storeLink" : "https://www.instagram.com/"
+        "storeLink" : "https://couturemx.netlify.app/store"
     },
     {
         "id": 3,
@@ -25,7 +25,7 @@
         "release": "1/10/2024",
         "img": "/img/Drops/drop-3.webp",
         "backimgPreview" : "/img/Drops/backdropPreview-3.webp",
-        "storeLink" : "https://www.tiktok.com/"
+        "storeLink" : "https://couturemx.netlify.app/store"
     },
     {
         "id": 4,
@@ -34,6 +34,6 @@
         "release": "19/03/2025",
         "img": "/img/Drops/drop-4.webp",
         "backimgPreview" : "/img/Drops/backdropPreview-4.webp",
-        "storeLink" : "https://www.behance.com/"
+        "storeLink" : "https://couturemx.netlify.app/store"
     }
 ]
