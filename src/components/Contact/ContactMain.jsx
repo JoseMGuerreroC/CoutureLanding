@@ -184,6 +184,7 @@ function ContactMain() {
                     setLoadingDialogue('Se ha enviado tu mensaje correctamente, te contactaremos lo más pronto por la dirección de correo que nos diste.');
                 },
                 (error) => {
+                    console.log(error.text);
                     setFormExit(true);
                     setFormResend(true);
                     setLottieLoading(lottieError);
