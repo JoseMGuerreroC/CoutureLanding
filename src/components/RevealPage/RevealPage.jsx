@@ -63,7 +63,6 @@ function RevealPage() {
                         gsap.to('body', {
                             overflowY: 'auto',
                         })
-                        scrollToHash(window.location.hash, e)
                     }
                 })
         });
@@ -108,7 +107,6 @@ function RevealPage() {
                         gsap.to('body', {
                             overflowY: 'auto',
                         })
-                        scrollToHash(window.location.hash, e)
                     }
                 })
         });
