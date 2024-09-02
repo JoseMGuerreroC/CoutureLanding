@@ -84,7 +84,7 @@ function ContactMain() {
 
     function moveSection(section) {
         gsap.to(formHolder.current, {
-            y: `-${100 * section}dvh`,
+            y: `-${100 * section}svh`,
             duration: .5,
             ease: 'power2.inOut',
         });

@@ -1,11 +1,11 @@
 .galleryCont{
     width: 100%;
-    height: 500dvh;
+    height: 500svh;
 }
 
 .galleryPin{
     width: 100%;
-    height: 100dvh;
+    height: 100svh;
     padding-bottom: 60px;
     display: flex;
     overflow: hidden;
@@ -46,7 +46,7 @@
 
 @media (min-width: 1200px){
     .galleryCont{
-        height: 800dvh;
+        height: 800svh;
     }
 
     .galleryProgress{

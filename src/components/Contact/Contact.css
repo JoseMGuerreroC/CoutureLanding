@@ -37,7 +37,7 @@
 
 .contactMain {
     width: 100%;
-    height: 100dvh;
+    height: 100svh;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -150,13 +150,13 @@
 
 .formHolder{
     width: 100%;
-    height: 500dvh;
+    height: 500svh;
     display: flex;
     flex-direction: column;
 }
 
 .formSection{
-    height: 100dvh;
+    height: 100svh;
     width: 100%;
     background: #000;
     display: flex;
