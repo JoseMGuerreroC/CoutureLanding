@@ -18,7 +18,7 @@ img{
 }
 
 .heroSection{
-    margin: 150dvh 0;
+    margin: 150lvh 0;
 }
 
 .section-previews{
@@ -45,7 +45,7 @@ img{
 
 @media (max-width: 1200px) {
     .section-previews{
-        height: 100dvh;
+        height: 100lvh;
     }
 
     .heroSectionTitle{
