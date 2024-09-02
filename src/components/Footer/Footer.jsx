@@ -70,7 +70,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className="footerLinks">
-                        <Link target='_blank' to={'/contact'} className='footerLink'>Contacto</Link>
+                        <Link target='_blank'git  to={'/contact'} className='footerLink'>Contacto</Link>
                         <Link to={'/privacy'} className='footerLink'>Política de privacidad</Link>
                     </div>
                 </div>
