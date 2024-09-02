@@ -181,7 +181,7 @@ function ContactMain() {
                 () => {
                     setFormExit(true);
                     setLottieLoading(lottieSuccess);
-                    setLoadingDialogue('Se ha enviado tu mensaje correctamente, te contactaremos lo más pronto por la dirección de correo que nos diste.');
+                    setLoadingDialogue('Se ha enviado tu mensaje correctamente. Te contacteremos lo más pronto posible al correo que nos brindaste.');
                 },
                 (error) => {
                     console.log(error.text);
