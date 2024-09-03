@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Hero from "../Hero/Hero";
 import Nav from '../Nav/Nav';
 import RevealPage from "../RevealPage/RevealPage.jsx";
@@ -12,15 +12,20 @@ import Gallery from "../Gallery/Gallery.jsx";
 
 function Main() {
 
+  const [playedAnimation, setPlayedAnimation] = useState(sessionStorage.getItem('played'))
+
   useEffect(() => {
-    gsap.timeline()
-    .to(window, {
-      scrollTo: 0,
-      duration: 0.5,
-    })
-    .to('body', {
-      overflowY: 'hidden',
-    }, '<')
+    if (!playedAnimation) {
+      gsap.timeline()
+      .to(window, {
+        scrollTo: 0,
+        duration: 0.5,
+      })
+      .to('body', {
+        overflowY: 'hidden',
+      }, '<')
+      sessionStorage.setItem('played', true)
+    } 
   }, [])
 
   return (
@@ -37,5 +42,5 @@ function Main() {
     </>
   )
 }
-         
+
 export default Main;
