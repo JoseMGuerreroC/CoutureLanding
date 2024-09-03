@@ -1,8 +1,10 @@
-import { useEffect } from 'react';
-import { scrollToHash } from '../ScrollToHash/ScrollToHash';
+import { useEffect, useState } from 'react';
 import './RevealPage.css'
 
 function RevealPage() {
+
+    const [playedAnimation, setPlayedAnimation] = useState(sessionStorage.getItem('played'))
+
 
     function showBrand() {
         setTimeout(() => {
@@ -19,97 +21,117 @@ function RevealPage() {
         }, 800)
     }
 
+
+
     useEffect(() => {
         let mm = gsap.matchMedia();
 
-        showBrand();
+        if (!playedAnimation) {
+            showBrand();
+            mm.add('(min-width:1201px)', () => {
+                gsap.timeline({ delay: 3.2 })
+                    .fromTo('.revealClip', {
+                        scale: 1.2,
+                        clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
+                    }, {
+                        scale: 1,
+                        duration: 1,
+                        clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
+                        stagger: {
+                            each: 0.15,
+                            ease: 'power.inOut'
+                        }
+                    }, '<')
+                    .fromTo('.revealAnimationCont', {
+                        clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
+                    }, {
+                        duration: .1,
+                        clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
+                    })
+                    .fromTo('.heroTitle', {
+                        scale: .7,
+                        transform: 'scaleX(1.1)',
+                    }, {
+                        transform: 'scaleX(1.1)',
+                        scale: 1,
+                        duration: 1,
+                    }, '<')
+                    .fromTo('.navbar', {
+                        y: '-100%',
+                    }, {
+                        ease: "elastic.out(1,0.5)",
+                        duration: .3,
+                        y: 0,
+                        zIndex: 1500,
+                        onComplete: (e) => {
+                            gsap.to('body', {
+                                overflowY: 'auto',
+                            })
+                        }
+                    })
+            });
 
-        mm.add('(min-width:1201px)', () => {
-            gsap.timeline({ delay: 3.2 })
-                .fromTo('.revealClip', {
-                    scale: 1.2,
-                    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
-                }, {
-                    scale: 1,
-                    duration: 1,
-                    clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
-                    stagger: {
-                        each: 0.15,
-                        ease: 'power.inOut'
-                    }
-                }, '<')
-                .fromTo('.revealAnimationCont', {
-                    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
-                }, {
-                    duration: .1,
-                    clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
-                })
-                .fromTo('.heroTitle', {
-                    scale: .7,
-                    transform: 'scaleX(1.1)',
-                }, {
-                    transform: 'scaleX(1.1)',
-                    scale: 1,
-                    duration: 1,
-                }, '<')
-                .fromTo('.navbar', {
-                    y: '-100%',
-                }, {
-                    ease: "elastic.out(1,0.5)",
-                    duration: .3,
-                    y: 0,
-                    zIndex: 1500,
-                    onComplete: (e) => {
-                        gsap.to('body', {
-                            overflowY: 'auto',
-                        })
-                    }
-                })
-        });
+            mm.add('(max-width:1200px)', () => {
+                gsap.timeline({ delay: 3.2 })
+                    .fromTo('.revealClip', {
+                        scale: 1.2,
+                        clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
+                    }, {
+                        scale: 1,
+                        duration: 1,
+                        clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
+                        stagger: {
+                            each: 0.15,
+                            ease: 'power.inOut'
+                        }
+                    }, '<')
+                    .fromTo('.revealAnimationCont', {
+                        clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
+                    }, {
+                        duration: .1,
+                        clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
+                    })
+                    .fromTo('.heroTitle', {
+                        scale: .7,
+                        transform: 'scaleX(1.1)',
+                    }, {
+                        transform: 'scaleX(1.1)',
+                        scale: 1,
+                        duration: 1,
 
-        mm.add('(max-width:1200px)', () => {
-            gsap.timeline({ delay: 3.2 })
-                .fromTo('.revealClip', {
-                    scale: 1.2,
-                    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
-                }, {
-                    scale: 1,
-                    duration: 1,
-                    clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
-                    stagger: {
-                        each: 0.15,
-                        ease: 'power.inOut'
-                    }
-                }, '<')
-                .fromTo('.revealAnimationCont', {
-                    clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
-                }, {
-                    duration: .1,
-                    clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
-                })
-                .fromTo('.heroTitle', {
-                    scale: .7,
-                    transform: 'scaleX(1.1)',
-                }, {
-                    transform: 'scaleX(1.1)',
-                    scale: 1,
-                    duration: 1,
-                    
-                }, '<')
-                .fromTo('.navbarBtn', {
-                    y: '-200%',
-                    opacity: 0,
-                }, {
-                    y: 0,
-                    opacity: 1,
-                    zIndex: 2001,
-                    onComplete: (e) => {
-                        gsap.to('body', {
-                            overflowY: 'auto',
-                        })
-                    }
-                })
-        });
+                    }, '<')
+                    .fromTo('.navbarBtn', {
+                        y: '-200%',
+                        opacity: 0,
+                    }, {
+                        y: 0,
+                        opacity: 1,
+                        zIndex: 2001,
+                        onComplete: (e) => {
+                            gsap.to('body', {
+                                overflowY: 'auto',
+                            })
+                        }
+                    })
+            });
+        } else {
+            gsap.timeline()
+            .to('.auto-type', {
+                scrambleText: {
+                    text: "COUTURE",
+                    chars: "Xx",
+                    speed: 0.3
+                },
+                duration: .3,
+            })
+            .fromTo('.revealAnimationCont', {
+                clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0% 100%)',
+            }, {
+                duration: .1,
+                clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
+            })
+        }
+
     }, []);
 
     return (
