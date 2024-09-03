@@ -130,6 +130,16 @@ function RevealPage() {
                 duration: .1,
                 clipPath: 'polygon(0 0, 0 0, 0 100%, 0% 100%)',
             })
+            .to('.navbar, .navbarBtn', {
+                ease: "elastic.out(1,0.5)",
+                duration: .3,
+                zIndex: 1500,
+                onComplete: (e) => {
+                    gsap.to('body', {
+                        overflowY: 'auto',
+                    })
+                }
+            })
         }
 
     }, []);
